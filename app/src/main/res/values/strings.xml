@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Linear Layout</string>
+    <string name="title">Title</string>
+    <string name="name">Name</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="contact">Contact</string>
+    <string name="enter_your_contact">Enter your Contact</string>
+    <string name="enter_your_e_mail">Enter your E-mail</string>
+    <string name="address">Address</string>
+    <string name="enter_your_address">Enter your Address</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="save">SAVE</string>
+    <string name="cancle">CANCLE</string>
+
+
+</resources>
