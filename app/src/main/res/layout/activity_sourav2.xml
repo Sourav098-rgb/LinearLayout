@@ -2,15 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/sourav2"
+    android:id="@+id/sourav"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg"
-    tools:context=".sourav2">
+    tools:context=".sourav">
 
-
-    <EditText
+    <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,102 +17,116 @@
         android:gravity="center_horizontal"
         android:text="@string/title"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:inputType="text"
         android:text="@string/name"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:inputType="text"
        android:text="@string/enter_your_name"
+        android:hint="Enter your name"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="20sp"/>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:inputType="text"
         android:text="@string/e_mail"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/enter_your_e_mail"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your email"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="20sp"/>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:inputType="text"
         android:text="@string/contact"
+        android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="30sp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:inputType="textPhonetic"
+        android:hint="Enter your number"
         android:text="@string/enter_your_contact"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="20sp"/>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:inputType="text"
         android:text="@string/address"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="30sp"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
         android:text="@string/enter_your_address"
+        android:inputType="text"
+        android:hint="Enter your Address"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="20sp"/>
 
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
         <Button
-            android:id="@+id/save"
+            android:id="@+id/btnsave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/DarkOliveGreen"
+            android:backgroundTint="#72008062"
             android:text="@string/save" />
 
         <Button
-            android:id="@+id/cancle"
+            android:id="@+id/btncancle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
-            android:backgroundTint="@color/DarkOliveGreen"
+            android:backgroundTint="#72008062"
             android:layout_weight="1"
             android:text="@string/cancle" />
     </LinearLayout>
-
-
-</LinearLayout>
-
+    </LinearLayout>
