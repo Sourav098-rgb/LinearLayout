@@ -19,46 +19,42 @@ class Sourav2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val btnsave=findViewById<Button>(R.id.btnsave)
-        val btncancle=findViewById<Button>(R.id.btncancle)
-
-        btnsave.setOnClickListener {
-            Toast.makeText(this,"Saved",Toast.LENGTH_SHORT).show()
+        btn=findViewById(R.id.btnsave)
+        btn?.setOnClickListener {
+            Toast.makeText(this, "Saved successfully", Toast.LENGTH_SHORT).show()
         }
-        btncancle.setOnClickListener {
-            Toast.makeText(this,"Cancled",Toast.LENGTH_SHORT).show()
+        btn=findViewById(R.id.btncancle)
+        btn?.setOnClickListener {
+            Toast.makeText(this, "Canceled", Toast.LENGTH_SHORT).show()
         }
 
-    }
+
+        }
 
     override fun onStart() {
         super.onStart()
-        Toast.makeText(this,"On Start",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "On Start", Toast.LENGTH_SHORT).show()
     }
 
     override fun onResume() {
         super.onResume()
-        Toast.makeText(this,"onResume",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "On Resume", Toast.LENGTH_SHORT).show()
     }
 
     override fun onStop() {
         super.onStop()
-        Toast.makeText(this,"On Stop", Toast.LENGTH_SHORT).show()
-
+        Toast.makeText(this, "on Stop", Toast.LENGTH_SHORT).show()
     }
 
     override fun onRestart() {
         super.onRestart()
-        Toast.makeText(this,"On Restart", Toast.LENGTH_SHORT).show()
-
+        Toast.makeText(this, "On Restart", Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Toast.makeText(this,"On Destroy", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "On Destroy", Toast.LENGTH_SHORT).show()
+    }
 
     }
 
-
-
-}
